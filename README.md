@@ -1,5 +1,7 @@
 # 🍁 Maple Price Inspector
 
+> [中文说明](README_CN.md) | English
+
 A Chrome extension for MapleStory item search and pricing using the MSU Navigator API. Search for items by selecting text on any webpage and get detailed item information including enhancement pricing.
 
 ## Features
