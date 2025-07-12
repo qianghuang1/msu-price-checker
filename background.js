@@ -1,6 +1,6 @@
 // Background script for Chrome extension
 chrome.runtime.onInstalled.addListener(() => {
-  // Create context menu item
+  // Create context menu item only for msu.io domain
   chrome.contextMenus.create({
     id: "searchMapleItem",
     title: "Search MapleStory Item: '%s'",
@@ -11,6 +11,7 @@ chrome.runtime.onInstalled.addListener(() => {
 // Handle context menu clicks
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === "searchMapleItem") {
+    
     const selectedText = info.selectionText;
     if (selectedText) {
       // Send message to content script to perform the search

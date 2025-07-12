@@ -4,13 +4,14 @@ A Chrome extension for MapleStory item search and pricing using the MSU Navigato
 
 ## Features
 
-- **Context Menu Search**: Right-click on selected text to search for MapleStory items
+- **Context Menu Search**: Right-click on selected text to search for MapleStory items (only on msu.io)
 - **Item Metadata**: Get detailed information including stats, requirements, and categories
 - **Enhancement Pricing**: View current and historical pricing for:
   - Starforce enhancements (0-22 stars)
   - Potential enhancements (Black Cube, Occult Cube, Bonus Occult Cube)
 - **Modern UI**: Beautiful gradient interface with responsive design
 - **Smart Caching**: Recent search results are cached for quick access
+- **Domain Restricted**: Only works on msu.io for focused functionality
 
 ## Screenshots
 
@@ -33,10 +34,11 @@ A Chrome extension for MapleStory item search and pricing using the MSU Navigato
 
 ### Usage
 
-#### Method 1: Context Menu Search
-1. Select any text on a webpage (e.g., "Silver Blossom Ring")
-2. Right-click and select "Search MapleStory Item: [selected text]"
-3. The extension popup will open with search results
+#### Method 1: Context Menu Search (msu.io only)
+1. Navigate to any page on msu.io
+2. Select any text on the page (e.g., "Silver Blossom Ring")
+3. Right-click and select "Search MapleStory Item: [selected text]"
+4. The extension popup will open with search results
 
 #### Method 2: Manual Search
 1. Click the Maple Inspector icon in your browser toolbar
@@ -75,10 +77,9 @@ maple-inspector/
 
 - **Manifest Version**: 3 (latest Chrome extension standard)
 - **Permissions**: 
-  - `contextMenus` - For right-click search functionality
-  - `activeTab` - For content script injection
+  - `contextMenus` - For right-click search functionality (msu.io only)
   - `storage` - For caching search results
-- **Host Permissions**: `https://msu.io/*` - For API access
+- **Host Permissions**: `https://msu.io/*` - For API access and content script injection
 - **APIs Used**: Chrome Extensions API, Fetch API, Chrome Storage API
 
 ## Development

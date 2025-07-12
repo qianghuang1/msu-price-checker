@@ -18,14 +18,17 @@ The extension integrates with MSU Navigator API endpoints:
 - Pricing: `https://msu.io/navigator/api/navigator/msu-stats/dynamic-pricing/enhance-price/history`
 
 ## Features
-- Right-click context menu search on selected text
+- Right-click context menu search on selected text (msu.io domain only)
 - Item search and metadata display
 - Starforce enhancement pricing
 - Potential enhancement pricing with cube types
 - Modern gradient UI design
+- Domain-restricted functionality for focused use
 
 ## Development Notes
 - Uses Manifest V3 for Chrome extensions
 - Requires host permissions for msu.io domain
+- Content script only runs on msu.io pages
+- Context menu only appears on msu.io domain
 - Uses Chrome storage API for caching search results
 - Implements async/await for API calls
