@@ -12,6 +12,15 @@ A Chrome extension for MapleStory item search and pricing using the MSU Navigato
 - **Modern UI**: Beautiful gradient interface with responsive design
 - **Smart Caching**: Recent search results are cached for quick access
 
+## Screenshots
+
+![Extension in action - Search results](1.png)
+*Search results showing MapleStory items with detailed information*
+
+![Enhancement pricing interface](2.png)
+*Enhancement pricing view with Starforce and Potential options*
+
+
 ## Installation
 
 ### From Source (Development)
